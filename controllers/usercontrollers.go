@@ -19,7 +19,7 @@ type user struct {
 func GetAllUsers(w http.ResponseWriter, r *http.Request) {
 
 	u := []user{}
-	path := "/mnt/hgfs/workspace/user-management/controllers/db.txt"
+	path := "/mnt/hgfs/workspace/user-management/models/db.txt"
 	buf, err := os.Open(path)
 	if err != nil {
 		log.Fatal(err)
